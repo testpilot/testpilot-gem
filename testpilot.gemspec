@@ -16,6 +16,10 @@ Gem::Specification.new do |gem|
   gem.executables   = 'testpilot'
   gem.version       = TestPilot::VERSION
 
+  gem.add_dependency('thor')
   gem.add_development_dependency('rspec', '~> 2.8.0')
+  gem.add_development_dependency('simplecov', '~> 0.5.4')
+  gem.add_development_dependency('fakefs', '~> 0.4.0')
+  gem.add_development_dependency('webmock', '~> 1.7.10')
 end
 
