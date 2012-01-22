@@ -31,5 +31,11 @@ describe TestPilot::Auth do
     @cli.password.should == 'pass'
   end
 
+  it "asks for credentials when the file doesn't exist" do
+    @cli.delete_credentials
+    @cli.should_receive(:ask_for_credentials).and_return(["u", "p"])
+    @cli.user.should == 'u'
+    @cli.password.should == 'p'
+  end
 
 end

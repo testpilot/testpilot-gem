@@ -2,7 +2,7 @@ require "thor"
 
 module TestPilot
   class Command < Thor
-    
+
     include TestPilot::Helpers
 
     desc :setup, "Setup my account so testpilot can authenticate"
