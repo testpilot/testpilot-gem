@@ -1,4 +1,4 @@
-require "testpilot/version"
+require "test_pilot/version"
 
 module TestPilot
 end
